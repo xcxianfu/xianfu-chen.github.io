@@ -1,27 +1,40 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Xianfu Chen</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi, I'm Xianfu Chen!</h1>
-				<p>I'm <em>A</em> Don't<a href="/about">Read</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:xcxianfu@gmail.com">email</a></li>
-        		<li><a href="https://github.com/xcxianfu">github.com/xcxianfu</a></li>
-			</ul>
-		</footer>
-	</body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Xianfu Chen's research in wireless communications, reinforcement learning, edge intelligence, and 6G. Publications, projects, and research updates.">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>Xianfu Chen — Research updates</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="content.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="template-banner" id="template-banner">TEMPLATE PREVIEW <span>Sample entries illustrate the layout. Replace them with your research.</span></div>
+  <header class="header shell">
+    <a class="brand" href="#"><span class="brand-mark" aria-hidden="true">r<span>·</span></span><span id="brand-name">Research Journal</span></a>
+    <nav aria-label="Main navigation"><a href="#updates">Updates</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#about">About <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span> XIANFU CHEN / RESEARCH & UPDATES</div><h1 id="headline">Learning to connect.<br>Intelligence at the edge.</h1><p id="intro">Wireless communications, reinforcement learning, and edge intelligence.</p><a class="button" href="#updates">Explore the updates <span aria-hidden="true">↗</span></a><div class="hero-role">Chief Research Engineer · CyberAray<br>Professor · SARI, CAS & Zhengzhou University</div></div>
+      <div class="research-art" aria-hidden="true"><div class="art-label">OBSERVE → QUESTION → EXPLORE</div><svg viewBox="0 0 400 330"><defs><pattern id="grid" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#cbcfc1"/></pattern></defs><rect width="400" height="330" fill="url(#grid)"/><g fill="none" stroke="#b2bb9c" stroke-width="1"><ellipse cx="200" cy="161" rx="142" ry="65" transform="rotate(-32 200 161)"/><ellipse cx="200" cy="161" rx="142" ry="65" transform="rotate(32 200 161)"/><ellipse cx="200" cy="161" rx="142" ry="65" transform="rotate(90 200 161)"/><path d="M49 245L320 63M60 92L334 245" stroke-dasharray="3 6"/></g><g fill="#64784b"><circle cx="91" cy="211" r="7"/><circle cx="286" cy="97" r="5"/><circle cx="198" cy="161" r="13"/><circle cx="311" cy="215" r="7"/><circle cx="200" cy="24" r="5"/></g><circle cx="198" cy="161" r="23" fill="none" stroke="#64784b"/><g font-family="monospace" font-size="10" fill="#68715e"><text x="36" y="199">question</text><text x="290" y="83">evidence</text><text x="269" y="240">next step</text></g></svg><div class="art-footer"><span>FIELD NOTES / 001</span><span>Always a work in progress.</span></div></div>
+    </section>
+    <div class="interest-strip"><div class="shell"><span class="eyebrow">EXPLORING</span><div id="interests"><span>Research questions</span><span>Methods & experiments</span><span>Open science</span></div></div></div>
+    <section class="section shell" id="updates">
+      <div class="section-heading"><div><div class="eyebrow">01 / THE RESEARCH LOG</div><h2>Latest updates<span class="small-dot">.</span></h2></div><p>New work and notes from the process.</p></div>
+      <div class="feed-controls"><div class="filters" role="group" aria-label="Filter updates"><button class="active" data-filter="All" aria-pressed="true">All updates</button><button data-filter="Paper" aria-pressed="false">Papers</button><button data-filter="Project" aria-pressed="false">Projects</button><button data-filter="Talk" aria-pressed="false">Talks</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search updates" aria-label="Search updates"></label></div>
+      <div id="updates-list" aria-live="polite"></div><p class="results-count" id="results-count"></p>
+    </section>
+    <section class="section publications-section" id="publications"><div class="shell"><div class="section-heading"><div><div class="eyebrow">02 / SELECTED WORK</div><h2>Publications<span class="small-dot">.</span></h2></div><a class="scholar-link" href="https://scholar.google.fi/citations?user=peH-CyUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Full list on Google Scholar ↗</a></div><div class="filters publication-filters" role="group" aria-label="Filter publications"><button class="active" data-pub-filter="All" aria-pressed="true">All selected work</button><button data-pub-filter="2026" aria-pressed="false">2026</button><button data-pub-filter="2025" aria-pressed="false">2025</button><button data-pub-filter="Earlier" aria-pressed="false">Earlier work</button></div><div id="publications-list" aria-live="polite"></div></div></section>
+    <section class="section shell" id="projects"><div class="section-heading"><div><div class="eyebrow">03 / RESEARCH COLLABORATIONS</div><h2>Projects<span class="small-dot">.</span></h2></div><p>Current funded research and collaborations.</p></div><div class="project-grid" id="projects-list"></div></section>
+    <section class="about-section shell" id="about"><div><div class="eyebrow">04 / BEHIND THE NOTEBOOK</div><h2 id="about-heading">Hello, researcher.</h2></div><div><p id="bio">This space is ready for your introduction. Share your research interests, affiliation, and the questions you are working on.</p><div class="profile-links" id="profile-links"></div></div></section>
+    <section class="profile-details shell" aria-label="Academic background"><div><h3>Education</h3><div id="education-list"></div></div><div><h3>Academic service</h3><ul id="service-list"></ul></div><div><h3>Selected recognition</h3><ul id="recognition-list"></ul></div></section>
+  </main>
+  <footer class="shell"><span id="footer-name">Research Journal</span><span>A living record of the work.</span><a href="#">Back to top ↑</a></footer>
+  <dialog id="update-dialog"><button class="close-dialog" aria-label="Close update">×</button><div id="dialog-content"></div></dialog>
+</body>
 </html>
