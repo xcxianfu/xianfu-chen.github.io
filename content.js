@@ -10,7 +10,7 @@ window.RESEARCH_SITE = {
     "6G & edge intelligence"
   ],
   "aboutHeading": "Xianfu Chen, Ph.D.",
-  "bio": "I am Chief Research Engineer at Shenzhen CyberAray Network Technology Co., Ltd., and a Professor at the Shanghai Advanced Research Institute, Chinese Academy of Sciences, and Zhengzhou University. My work connects machine learning with wireless communications, edge computing, and network resource management.\n\nBefore joining CyberAray in 2023, I spent more than a decade at VTT Technical Research Centre of Finland. I received my Ph.D. in Information and Communication Engineering from Zhejiang University in 2012.",
+  "bio": "I am Chief Research Engineer at Shenzhen CyberAray Network Technology Co., Ltd., and a Professor at the Shanghai Advanced Research Institute, Chinese Academy of Sciences. My work connects machine learning with wireless communications, edge computing, and network resource management.\n\nBefore joining CyberAray in 2023, I spent more than a decade at VTT Technical Research Centre of Finland. I received my Ph.D. in Information and Communication Engineering from Zhejiang University in 2012.",
   "links": [
     {
       "label": "Google Scholar",
@@ -209,14 +209,6 @@ window.RESEARCH_SITE = {
     {
       "title": "Ph.D. · Information and Communication Engineering",
       "detail": "Zhejiang University · 2012"
-    },
-    {
-      "title": "M.S. · Communication and Information System",
-      "detail": "Ningbo University · 2008"
-    },
-    {
-      "title": "B.E. · Information and Computing Science",
-      "detail": "Harbin University of Science and Technology · 2005"
     }
   ],
   "service": [
