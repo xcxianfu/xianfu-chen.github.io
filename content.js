@@ -27,6 +27,49 @@ window.RESEARCH_SITE = {
   ],
   "updates": [
     {
+      "date": "2026-07-23",
+      "type": "Paper",
+      "title": "Fluid antennas for non-terrestrial networks in 6G",
+      "summary": "A survey of fluid antenna-assisted non-terrestrial networks, covering fundamentals, current research, and future directions.",
+      "body": "“Advancing Fluid Antenna-Assisted Non-Terrestrial Networks in 6G and Beyond: Fundamentals, State of the Art, and Future Directions” is published in IEEE Communications Surveys & Tutorials.\n\nA survey of fluid antenna-assisted non-terrestrial networks, covering fundamentals, current research, and future directions.",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11622450/"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2511.00569"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "type": "Paper",
+      "title": "Efficient SplitFed learning over cell-free massive MIMO",
+      "summary": "Our INFOCOM 2026 paper jointly optimizes uplink power allocation and split layer selection for distributed learning.",
+      "body": "“Power Control and Split Layer Co-Design for Efficient SplitFed Learning over Cell-Free Massive MIMO Networks” is published in IEEE INFOCOM 2026, pp. 1–6.\n\nOur INFOCOM 2026 paper jointly optimizes uplink power allocation and split layer selection for distributed learning.",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11571758/"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "type": "Paper",
+      "title": "Edge intelligence for transportation digital twins",
+      "summary": "A collaborative vehicle, roadside, and cloud framework for digital-twin reconstruction in intelligent transportation systems.",
+      "body": "“Digital Twin Reconstruction Strategy for Intelligent Transportation System” is published in IEEE Transactions on Vehicular Technology.\n\nA collaborative vehicle, roadside, and cloud framework for digital-twin reconstruction in intelligent transportation systems.",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11520294/"
+        }
+      ]
+    },
+    {
       "date": "2026-04-03",
       "type": "Paper",
       "title": "Energy-efficient uplinks through multi-satellite cooperation",
@@ -92,6 +135,49 @@ window.RESEARCH_SITE = {
     }
   ],
   "publications": [
+    {
+      "title": "Advancing Fluid Antenna-Assisted Non-Terrestrial Networks in 6G and Beyond: Fundamentals, State of the Art, and Future Directions",
+      "authors": "Tianheng Xu, Runke Fan, Jie Zhu, Pei Peng, Xianfu Chen, Qingqing Wu, Ming Jiang, Celimuge Wu, Kai-Kit Wong",
+      "venue": "IEEE Communications Surveys & Tutorials · 2026",
+      "year": 2026,
+      "description": "",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11622450/"
+        },
+        {
+          "label": "arXiv",
+          "url": "https://arxiv.org/abs/2511.00569"
+        }
+      ]
+    },
+    {
+      "title": "Power Control and Split Layer Co-Design for Efficient SplitFed Learning over Cell-Free Massive MIMO Networks",
+      "authors": "Wei Liu, Tianheng Xu, Xianfu Chen, Pei Peng, Charilaos C. Zarakovitis, Ting Zhou, Yuling Ouyang, Honglin Hu",
+      "venue": "IEEE INFOCOM 2026, pp. 1–6 · 2026",
+      "year": 2026,
+      "description": "",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11571758/"
+        }
+      ]
+    },
+    {
+      "title": "Digital Twin Reconstruction Strategy for Intelligent Transportation System",
+      "authors": "Jicai Chen, Rui Yin, Kai Ying, Celimuge Wu, Yu Zhang, Xianfu Chen, Weidang Lu",
+      "venue": "IEEE Transactions on Vehicular Technology · 2026",
+      "year": 2026,
+      "description": "",
+      "links": [
+        {
+          "label": "Publisher",
+          "url": "https://ieeexplore.ieee.org/document/11520294/"
+        }
+      ]
+    },
     {
       "title": "Reconfigurable Intelligent Surface-Aided Cooperative Multi-Satellite System for Energy-Efficient Multi-User Uplink Transmission",
       "authors": "Kai Feng, Tianheng Xu, Xianfu Chen, Ting Zhou, Haijun Zhang, Honglin Hu, Arumugam Nallanathan",
