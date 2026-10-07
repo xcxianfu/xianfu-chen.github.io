@@ -52,19 +52,32 @@
     renderUpdates();
   }));
   $('search').addEventListener('input', renderUpdates); renderUpdates();
-  function renderPublications(pubFilter = 'All') {
-  $('publications-list').replaceChildren(...data.publications.filter(pub => pubFilter === 'All' || (pubFilter === 'Earlier' ? pub.year < 2025 : String(pub.year) === pubFilter)).map((pub, i) => {
-    const row = element('article', 'publication'); const copy = element('div');
-    copy.append(element('h3', '', pub.title), element('p', '', pub.authors), element('p', 'venue', `${pub.venue}${pub.example ? ' · EXAMPLE PUBLICATION' : ''}`), element('p', '', pub.description), links(pub.links));
-    row.append(element('span', 'pub-index', String(i+1).padStart(2,'0')), copy); return row;
-  }));
-  if (!$('publications-list').children.length) $('publications-list').append(element('p','empty-state','No selected publications for this year.'));
+  const publicationYears = [...new Set(data.publications.map(pub => pub.year).filter(Boolean))].sort((a,b) => b-a);
+  for (const year of publicationYears) {
+    const option = element('option', '', String(year)); option.value = String(year); $('publication-year').append(option);
   }
+  if (data.publications.some(pub => !pub.year)) {
+    const option = element('option', '', 'Year not listed'); option.value = 'Undated'; $('publication-year').append(option);
+  }
+  function renderPublications() {
+    const year = $('publication-year').value;
+    const query = $('publication-search').value.trim().toLowerCase();
+    const publications = data.publications.filter(pub =>
+      (year === 'All' || (year === 'Undated' ? !pub.year : String(pub.year) === year)) &&
+      `${pub.title} ${pub.authors} ${pub.venue}`.toLowerCase().includes(query));
+    $('publications-list').replaceChildren(...publications.map((pub, i) => {
+      const row = element('article', 'publication'); const copy = element('div');
+      copy.append(element('h3', '', pub.title), element('p', '', pub.authors), element('p', 'venue', pub.venue || 'Year and venue not listed on Google Scholar'));
+      if (pub.description) copy.append(element('p', '', pub.description));
+      copy.append(links(pub.links));
+      row.append(element('span', 'pub-index', String(i+1).padStart(2,'0')), copy); return row;
+    }));
+    $('publication-count').textContent = `${publications.length} of ${data.publications.length} records`;
+    if (!publications.length) $('publications-list').append(element('p','empty-state','No publications match your search. Try another year or search term.'));
+  }
+  $('publication-year').addEventListener('change', renderPublications);
+  $('publication-search').addEventListener('input', renderPublications);
   renderPublications();
-  document.querySelectorAll('[data-pub-filter]').forEach(button => button.addEventListener('click', () => {
-    document.querySelectorAll('[data-pub-filter]').forEach(v => { v.classList.toggle('active', v === button); v.setAttribute('aria-pressed', String(v === button)); });
-    renderPublications(button.dataset.pubFilter);
-  }));
   $('projects-list').replaceChildren(...data.projects.map((project, i) => {
     const card = element('article', 'project'); card.append(element('div', 'project-number', String(i+1).padStart(2,'0')), element('span', 'project-status', project.status), element('h3','',project.title), element('p','',project.description), links(project.links)); return card;
   }));
